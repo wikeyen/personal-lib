@@ -11,14 +11,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class TopNTest {
 
     @Test
-    void should_find_the_5th_largest_number_when_findTopNth_given_an_array() {
-        List<Integer> numbers = ElementUtil.getIntegerNumbers(10, 0, 10);
+    void should_find_the_6th_largest_number_when_findTopNth_given_an_array() {
+        List<Integer> numbers = ElementUtil.getIntegerNumbers(1000, 0, 1000);
         Collections.sort(numbers);
         TopN<Integer> topN = new TopN<>();
-        int rank = 5;
+        int rank = 6;
 
-        Integer top5thValue = topN.findTopNthValue(rank, numbers);
+        Integer top6thValue = topN.findTopNth(rank - 1, numbers);
 
-        assertEquals(numbers.get(rank), top5thValue);
+        assertEquals(numbers.get(rank - 1), top6thValue);
     }
 }
