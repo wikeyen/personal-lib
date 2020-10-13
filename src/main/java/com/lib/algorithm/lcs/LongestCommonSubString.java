@@ -71,17 +71,33 @@ public class LongestCommonSubString {
         // in case two strings do not start with the same character, dp[0][0] will always be 0
         int[][] dp = new int[str1.length() + 1][str2.length() + 1];
         int maxLength = 0;
+        int x = 0;
 
         for (int i = 1; i <= str1.length(); i++) {
             for (int j = 1; j <= str2.length(); j++) {
                 if (str1.charAt(i - 1) == str2.charAt(j - 1)) { // index for strings are always (1 + index of dp)
                     dp[i][j] = dp[i - 1][j - 1] + 1;
-                    maxLength = Math.max(maxLength, dp[i][j]);
+                    if (maxLength < dp[i][j]) {
+                        x = i;
+                        maxLength = dp[i][j];
+                    }
                 }
             }
         }
 
+        printLCS(str1, maxLength, x);
+
         return maxLength;
+    }
+
+    private void printLCS(String str1, int maxLength, int x) {
+        StringBuilder sb = new StringBuilder();
+        x = x - 1;
+        for (int len = maxLength; len > 0; len--) {
+            sb.append(str1.charAt(x--));
+        }
+
+        System.out.println(sb.reverse().toString());
     }
 
 
