@@ -1,6 +1,6 @@
 package com.lib.utils;
 
-import com.lib.dto.TreeNode;
+import com.lib.algorithm.dto.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
