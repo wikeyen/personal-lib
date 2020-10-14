@@ -1,6 +1,6 @@
 package com.lib.algorithm.tree;
 
-import com.lib.dto.TreeNode;
+import com.lib.algorithm.dto.TreeNode;
 
 import java.util.Stack;
 import java.util.stream.Collectors;

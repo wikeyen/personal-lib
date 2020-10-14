@@ -1,4 +1,4 @@
-package com.lib.dto;
+package com.lib.algorithm.dto;
 
 public class TreeNode {
     public int val;

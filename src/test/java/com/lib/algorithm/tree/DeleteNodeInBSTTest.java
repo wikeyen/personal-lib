@@ -1,6 +1,6 @@
 package com.lib.algorithm.tree;
 
-import com.lib.dto.TreeNode;
+import com.lib.algorithm.dto.TreeNode;
 import com.lib.utils.ElementUtils;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

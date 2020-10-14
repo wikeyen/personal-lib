@@ -1,4 +1,4 @@
-package com.lib.algorithm.lcs;
+package com.lib.algorithm.dp.lcs;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

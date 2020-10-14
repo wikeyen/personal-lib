@@ -1,4 +1,4 @@
-package com.lib.algorithm.lcs;
+package com.lib.algorithm.dp.lcs;
 
 import org.apache.commons.lang3.StringUtils;
 

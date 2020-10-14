@@ -1,6 +1,6 @@
 package com.lib.algorithm.tree;
 
-import com.lib.dto.TreeNode;
+import com.lib.algorithm.dto.TreeNode;
 
 public class IsBalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
